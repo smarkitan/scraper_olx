@@ -42,5 +42,5 @@ def scrape_data():
     areas = areas[:min_length]
 
     # Creează un DataFrame și salvează-l ca output.csv
-    df = pd.DataFrame({"Link": links, "Title": titles, "Price": prices, "Area (m²)": areas})
+    df = pd.DataFrame({"Link": links, "Title": titles, "Price (Eur)": prices, "Area (Sqm)": areas})
     df.to_csv("output.csv", index=False, encoding='utf-8-sig')
