@@ -3,8 +3,8 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import re
 
-def scrape_data():
-    url = "https://www.olx.ro/imobiliare/birouri-spatii-comerciale/bucuresti/?search%5Bdistrict_id%5D=5&search%5Bfilter_enum_alege%5D%5B0%5D=inchiriere&currency=EUR"
+#def scrape_data():
+#    url = "https://www.olx.ro/imobiliare/birouri-spatii-comerciale/bucuresti/?search%5Bdistrict_id%5D=5&search%5Bfilter_enum_alege%5D%5B0%5D=inchiriere&currency=EUR"
 
     try:
         response = requests.get(url)
