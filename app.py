@@ -1,6 +1,7 @@
 from flask import Flask, send_file, render_template_string, jsonify
 import pandas as pd
 import script  # Asigură-te că acest fișier conține funcțiile necesare pentru scraping
+import os
 
 app = Flask(__name__)
 
@@ -58,4 +59,6 @@ def download_file():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+    port = int(os.environ.get('PORT', 8000))
+    app.run(host='0.0.0.0', port=port)
+
